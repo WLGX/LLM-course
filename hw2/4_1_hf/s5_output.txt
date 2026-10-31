@@ -1,0 +1,56 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+D:\Python\Python310\lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\15658\.cache\huggingface\hub\models--bert-base-cased. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+======================================================================
+[1] load_dataset('glue','mrpc') 用时 18.3s
+DatasetDict({
+    train: Dataset({
+        features: ['sentence1', 'sentence2', 'label', 'idx'],
+        num_rows: 3668
+    })
+    validation: Dataset({
+        features: ['sentence1', 'sentence2', 'label', 'idx'],
+        num_rows: 408
+    })
+    test: Dataset({
+        features: ['sentence1', 'sentence2', 'label', 'idx'],
+        num_rows: 1725
+    })
+})
+各 split 条数: {'train': 3668, 'validation': 408, 'test': 1725}
+======================================================================
+[2] 切片与元素访问
+raw_datasets['train'][0] = {'sentence1': 'Amrozi accused his brother , whom he called " the witness " , of deliberately distorting his evidence .', 'sentence2': 'Referring to him as only " the witness " , Amrozi accused his brother of deliberately distorting his evidence .', 'label': 1, 'idx': 0}
+raw_datasets['train'][:2]['sentence1'][1] = Yucaipa owned Dominick 's before selling the chain to Safeway in 1998 for $ 2.5 billion .
+列名 = ['sentence1', 'sentence2', 'label', 'idx']
+特征 schema = {'sentence1': Value('string'), 'sentence2': Value('string'), 'label': ClassLabel(names=['not_equivalent', 'equivalent']), 'idx': Value('int32')}
+======================================================================
+[3] map() 批量分词
+加载 AutoTokenizer: bert-base-cased | 词表大小: 28996
+Map:   0%|          | 0/3668 [00:00<?, ? examples/s]Map:  27%|██▋       | 1000/3668 [00:00<00:01, 2118.46 examples/s]Map:  55%|█████▍    | 2000/3668 [00:00<00:00, 2706.41 examples/s]Map: 100%|██████████| 3668/3668 [00:00<00:00, 4410.53 examples/s]
+Map:   0%|          | 0/408 [00:00<?, ? examples/s]Map: 100%|██████████| 408/408 [00:00<00:00, 18730.31 examples/s]
+Map:   0%|          | 0/1725 [00:00<?, ? examples/s]Map: 100%|██████████| 1725/1725 [00:00<00:00, 19968.80 examples/s]
+map(batched=True) 用时 1.4s
+tokenized 列名 = ['sentence1', 'sentence2', 'label', 'idx', 'input_ids', 'token_type_ids', 'attention_mask']
+======================================================================
+[4] 动态填充（每个 batch 内按最长句填充，而非全数据集统一长度）
+batch keys = ['input_ids', 'token_type_ids', 'attention_mask', 'labels']
+各 key 形状 = {'input_ids': torch.Size([8, 69]), 'token_type_ids': torch.Size([8, 69]), 'attention_mask': torch.Size([8, 69]), 'labels': torch.Size([8])}
+attention_mask[0] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+input_ids[0] = [101, 7277, 2180, 5303, 4806, 1117, 1711, 117, 2292, 1119, 1270, 107, 1103, 7737, 107, 117, 1104, 9938, 4267, 12223, 21811, 1117, 2554, 119, 102, 11336, 6732, 3384, 1106, 1140, 1112, 1178, 107, 1103, 7737, 107, 117, 7277, 2180, 5303, 4806, 1117, 1711, 1104, 9938, 4267, 12223, 21811, 1117, 2554, 119, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+labels = [1, 0, 1, 0, 1, 1, 0, 1]
+======================================================================
+[5] 缓存复用（同一参数再 map 一次，速度应明显更快）
+再次 map 用时 2.016s（应远小于首次，说明读的是缓存）
+======================================================================
+[6] 用 datasets 加载本地语料（课程语料如何读进去）
+Generating rmrb9801 split: 0 examples [00:00, ? examples/s]Generating rmrb9801 split: 23258 examples [00:00, 38786.94 examples/s]Generating rmrb9801 split: 23258 examples [00:00, 38389.09 examples/s]
+DatasetDict({
+    rmrb9801: Dataset({
+        features: ['text'],
+        num_rows: 23258
+    })
+})
+第一条前 120 字 = 19980101-01-001-001 迈向 充满 希望 的 新 世纪 —— 一九九八年 新年 讲话 （ 附 图片 １ 张 ） 
+条数 = 23258
