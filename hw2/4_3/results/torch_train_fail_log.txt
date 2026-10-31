@@ -1,0 +1,15 @@
+  0%|          | 0/375 [00:00<?, ?it/s][Epoch 1]:   0%|          | 0/375 [00:00<?, ?it/s][Epoch 1]:   0%|          | 0/375 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "F:\LLM-course\hw2\4_3\impl\pytorch-sgns\train.py", line 93, in <module>
+    train(parse_args())
+  File "F:\LLM-course\hw2\4_3\impl\pytorch-sgns\train.py", line 81, in train
+    loss = sgns(iword, owords)
+  File "D:\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "F:\LLM-course\hw2\4_3\impl\pytorch-sgns\model.py", line 71, in forward
+    ovectors = self.embedding.forward_o(owords)
+  File "F:\LLM-course\hw2\4_3\impl\pytorch-sgns\model.py", line 45, in forward_o
+    v = LT(data)
+TypeError: expected TensorOptions(dtype=__int64, device=cpu, layout=Strided, requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)) (got TensorOptions(dtype=int, device=cpu, layout=Strided, requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt)))

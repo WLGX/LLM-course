@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "F:\LLM-course\hw2\4_3\impl\word2vec_numpy\wordtovec.py", line 274, in <module>
+    training_data = w2v.generate_training_data(settings, corpus)
+  File "F:\LLM-course\hw2\4_3\impl\word2vec_numpy\wordtovec.py", line 124, in generate_training_data
+    return np.array(training_data)
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (10, 2) + inhomogeneous part.
