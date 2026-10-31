@@ -1,0 +1,45 @@
+{
+  "min_count": 1,
+  "orders": [
+    {
+      "order": 1,
+      "seconds": 18.43,
+      "tokens": 5800891,
+      "n_grams": 5800891,
+      "distinct": 123432,
+      "rows_kept": 123432
+    },
+    {
+      "order": 2,
+      "seconds": 99.54,
+      "tokens": 5800891,
+      "n_grams": 6043441,
+      "distinct": 1546501,
+      "rows_kept": 1546501
+    },
+    {
+      "order": 3,
+      "seconds": 178.1,
+      "tokens": 5800891,
+      "n_grams": 6043441,
+      "distinct": 3666667,
+      "rows_kept": 3666667
+    },
+    {
+      "order": 4,
+      "seconds": 212.83,
+      "tokens": 5800891,
+      "n_grams": 6043441,
+      "distinct": 4794166,
+      "rows_kept": 4794166
+    },
+    {
+      "order": 5,
+      "seconds": 263.37,
+      "tokens": 5800891,
+      "n_grams": 6043441,
+      "distinct": 5205366,
+      "rows_kept": 5205366
+    }
+  ]
+}

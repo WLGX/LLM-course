@@ -1,0 +1,157 @@
+[
+  {
+    "order": 1,
+    "lmplz_seconds": 6.3,
+    "build_binary_seconds": 0.14,
+    "arpa_mib": 2.4,
+    "binary_mib": 2.4,
+    "counts": {
+      "1": 123434
+    },
+    "log": "/root/lmplz_tmp/order1.log"
+  },
+  {
+    "order": 2,
+    "lmplz_seconds": 3.23,
+    "build_binary_seconds": 0.93,
+    "arpa_mib": 39.2,
+    "binary_mib": 30.7,
+    "counts": {
+      "1": 123434,
+      "2": 1546501
+    },
+    "log": "/root/lmplz_tmp/order2.log"
+  },
+  {
+    "order": 3,
+    "lmplz_seconds": 4.81,
+    "build_binary_seconds": 3.18,
+    "arpa_mib": 159.0,
+    "binary_mib": 102.2,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846
+    },
+    "log": "/root/lmplz_tmp/order3.log"
+  },
+  {
+    "order": 4,
+    "lmplz_seconds": 7.02,
+    "build_binary_seconds": 6.68,
+    "arpa_mib": 359.4,
+    "binary_mib": 203.1,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812
+    },
+    "log": "/root/lmplz_tmp/order4.log"
+  },
+  {
+    "order": 5,
+    "lmplz_seconds": 11.5,
+    "build_binary_seconds": 28.92,
+    "arpa_mib": 606.8,
+    "binary_mib": 313.9,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726
+    },
+    "log": "/root/lmplz_tmp/order5.log"
+  },
+  {
+    "order": 6,
+    "lmplz_seconds": 33.5,
+    "build_binary_seconds": 39.68,
+    "arpa_mib": 881.6,
+    "binary_mib": 425.0,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726,
+      "6": 4841416
+    },
+    "log": "/root/lmplz_tmp/order6.log"
+  },
+  {
+    "order": 7,
+    "lmplz_seconds": 77.15,
+    "build_binary_seconds": 40.42,
+    "arpa_mib": 1174.9,
+    "binary_mib": 533.2,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726,
+      "6": 4841416,
+      "7": 4689615
+    },
+    "log": "/root/lmplz_tmp/order7.log"
+  },
+  {
+    "order": 8,
+    "lmplz_seconds": 180.05,
+    "build_binary_seconds": 70.79,
+    "arpa_mib": 1482.7,
+    "binary_mib": 637.4,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726,
+      "6": 4841416,
+      "7": 4689615,
+      "8": 4505167
+    },
+    "log": "/root/lmplz_tmp/order8.log"
+  },
+  {
+    "order": 9,
+    "lmplz_seconds": 220.69,
+    "build_binary_seconds": 102.35,
+    "arpa_mib": 1805.3,
+    "binary_mib": 737.1,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726,
+      "6": 4841416,
+      "7": 4689615,
+      "8": 4505167,
+      "9": 4306785
+    },
+    "log": "/root/lmplz_tmp/order9.log"
+  },
+  {
+    "order": 10,
+    "lmplz_seconds": 427.9,
+    "build_binary_seconds": 89.6,
+    "arpa_mib": 2132.0,
+    "binary_mib": 832.2,
+    "counts": {
+      "1": 123434,
+      "2": 1546501,
+      "3": 3646846,
+      "4": 4664812,
+      "5": 4895726,
+      "6": 4841416,
+      "7": 4689615,
+      "8": 4505167,
+      "9": 4306785,
+      "10": 4104906
+    },
+    "log": "/root/lmplz_tmp/order10.log"
+  }
+]

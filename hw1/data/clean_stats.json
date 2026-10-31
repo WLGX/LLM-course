@@ -1,0 +1,61 @@
+{
+  "input_files": [
+    "1998-01-2003版-带音.txt",
+    "1998-02-2003版-带音.txt",
+    "1998-03-2003版-带音.txt",
+    "1998-04-2003版-带音.txt",
+    "1998-05-2003版-带音.txt",
+    "1998-06-2003版-带音.txt"
+  ],
+  "raw_lines": 123761,
+  "decode_error_lines": [
+    {
+      "file": "1998-03-2003版-带音.txt",
+      "line_no": 17687,
+      "text": "19980323-09-005-012 北京 潘 � 匡 初珅 "
+    },
+    {
+      "file": "1998-04-2003版-带音.txt",
+      "line_no": 24498,
+      "text": "19980430-03-005-007 丁 人林 、 马 万祺 、 马 有礼 、 王 启人 、 王 "
+    },
+    {
+      "file": "1998-05-2003版-带音.txt",
+      "line_no": 4530,
+      "text": "19980507-04-007-005 区 宗杰 朱 祖寿 刘 本立 刘 焯华 刘 镇 许 辉年 李"
+    },
+    {
+      "file": "1998-05-2003版-带音.txt",
+      "line_no": 4536,
+      "text": "19980507-04-007-011 乔 晓阳 刘 焯华 许 和震 许 崇德 许 辉年 李 水林 "
+    },
+    {
+      "file": "1998-05-2003版-带音.txt",
+      "line_no": 4538,
+      "text": "19980507-04-007-013 召集人 ： 刘 焯华 吴 建� 唐 弢 "
+    }
+  ],
+  "articles_seen": 18631,
+  "duplicate_articles_removed": 46,
+  "tokens_before_clean": 7309763,
+  "tokens_after_clean": 7309763,
+  "sentences_kept": 305625,
+  "sentences_pure_punct_dropped": 4040,
+  "split": {
+    "train": {
+      "articles": 14836,
+      "sentences": 242550,
+      "tokens": 5800891
+    },
+    "valid": {
+      "articles": 1871,
+      "sentences": 31443,
+      "tokens": 746814
+    },
+    "test": {
+      "articles": 1878,
+      "sentences": 31551,
+      "tokens": 754926
+    }
+  }
+}
