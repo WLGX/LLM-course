@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
+.env
 hw2/4_2/models/
+hw3/4_4/models/
+hw3/4_4/data/*.jsonl
+hw3/4_4/results/run_train.log
