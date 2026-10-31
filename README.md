@@ -14,6 +14,7 @@
   - `4_1_hf/`：预备学习——Hugging Face NLP Course 第 5 节（Datasets）、第 6 节（Tokenizers）练习脚本与输出，含从零训练的 BPE/WordPiece/Unigram 分词器
   - `4_2/`：语料清洗、词向量训练、文本分类实验的脚本、数据与结果（含训练日志与评测 JSON）
   - `4_3/`：word2vec 实现对比——GitHub 检索对比表、原版 C（WSL 编译）/ PyTorch SGNS / NumPy 玩具三方同语料同参数运行与统一评测、教程阅读笔记（`4_3报告.md`）
+  - `4_4_思考题/`：L2 part1 两道思考题答案与配套实验——`P48_文本分段.md`（分段方法调研 + 英文歧义/pySBD 演示 + 人民日报分句统计 + 玩具分段模型）、`P147_影视剧embedding.md`（item2vec 合成观影序列实验 + 冷启动演示）
 
 ## 复现
 
@@ -60,6 +61,17 @@ cd ../../scripts && python eval_vectors.py
 ```
 
 未入库的可重建大文件：`data_pt/train.dat`（207MB）、`pts_pt/`（120MB）；`results/c_sg100`（原版 C 向量）与 `data_pt/idx2vec.dat`（PyTorch 向量）已入库，可直接跑统一评测。
+
+### 4_4 思考题配套实验
+
+```bash
+cd hw2/4_4_思考题/scripts
+pip install pysbd            # 英文规则分句（演示 A 用）
+python seg_demo.py           # A 英文句号歧义（pySBD vs 朴素切分）；B 人民日报分句统计（需课程群分享的原始语料，置于仓库根目录 ../1998-上半年-带音(1)/）；C 玩具分段模型
+python movie_embedding_demo.py   # 合成观影序列 → gensim word2vec（item2vec）+ 冷启动内容初始化演示
+```
+
+运行日志与统计已入库于 `hw2/4_4_思考题/results/`，两个演示实验均可独立复现（电影实验为合成数据玩具，已在文中明确标注）。
 
 ## 环境
 

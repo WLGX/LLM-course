@@ -1,0 +1,55 @@
+{
+  "english": {
+    "english_cases": [
+      {
+        "text": "Dr. Smith lives in New York. He arrived at 3.5 p.m. yesterday.",
+        "gold_sentences": 2,
+        "naive_split_count": 6,
+        "pysbd_split_count": 2
+      },
+      {
+        "text": "I spoke with Mr. Jones about the U.S. policy. Then we left at 5.30 p.m.",
+        "gold_sentences": 2,
+        "naive_split_count": 7,
+        "pysbd_split_count": 2
+      },
+      {
+        "text": "She said \"We will meet at 8 a.m.\" Then she left. We waited for her.",
+        "gold_sentences": 3,
+        "naive_split_count": 4,
+        "pysbd_split_count": 3
+      },
+      {
+        "text": "The price is $19.99. e.g. this is a classic example. See St. Paul's.",
+        "gold_sentences": 3,
+        "naive_split_count": 7,
+        "pysbd_split_count": 3
+      },
+      {
+        "text": "Version 3.14 was released on Jan. 2, 1998. Everyone was happy.",
+        "gold_sentences": 2,
+        "naive_split_count": 4,
+        "pysbd_split_count": 2
+      }
+    ],
+    "naive_correct": 0,
+    "pysbd_correct": 5,
+    "total": 5
+  },
+  "chinese": {
+    "lines_read": 2520,
+    "text_chars": 366537,
+    "terminal_marks": 4733,
+    "sentences": 4695,
+    "mean_sent_len": 48.0,
+    "median_sent_len": 41,
+    "max_sent_len": 643,
+    "min_sent_len": 2,
+    "tricky_examples": 3
+  },
+  "toy_model": {
+    "train_chars": 293229,
+    "test_chars": 73308,
+    "f1": 0.9957
+  }
+}
