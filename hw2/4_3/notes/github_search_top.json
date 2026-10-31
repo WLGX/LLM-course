@@ -1,0 +1,332 @@
+{
+ "all": {
+  "total": 13709,
+  "top15": [
+   {
+    "repo": "shibing624/text2vec",
+    "stars": 4975,
+    "lang": "Python",
+    "pushed": "2026-02-14T14:59:10Z",
+    "desc": "text2vec, text to vector. 文本向量表征工具，把文本转化为向量矩阵，实现了Word2Vec、RankBM25、Sentence-BERT"
+   },
+   {
+    "repo": "PaddlePaddle/PaddleRec",
+    "stars": 4087,
+    "lang": "Python",
+    "pushed": "2025-04-02T03:22:59Z",
+    "desc": "Recommendation Algorithm大规模推荐算法库，包含推荐系统经典及最新算法LR、Wide&Deep、DSSM、TDM、MIND、Word2Ve"
+   },
+   {
+    "repo": "danielfrg/word2vec",
+    "stars": 2612,
+    "lang": "C",
+    "pushed": "2023-04-06T22:45:49Z",
+    "desc": "Python interface to Google word2vec"
+   },
+   {
+    "repo": "BrikerMan/Kashgari",
+    "stars": 2380,
+    "lang": "Python",
+    "pushed": "2024-09-03T21:05:29Z",
+    "desc": "Kashgari is a production-level NLP Transfer learning framework built on top of t"
+   },
+   {
+    "repo": "dav/word2vec",
+    "stars": 1743,
+    "lang": "C",
+    "pushed": "2021-05-10T21:53:01Z",
+    "desc": "This tool provides an efficient implementation of the continuous bag-of-words an"
+   },
+   {
+    "repo": "tmikolov/word2vec",
+    "stars": 1597,
+    "lang": "C",
+    "pushed": "2023-02-28T21:31:53Z",
+    "desc": "Automatically exported from code.google.com/p/word2vec"
+   },
+   {
+    "repo": "3Top/word2vec-api",
+    "stars": 1438,
+    "lang": "Python",
+    "pushed": "2023-05-01T20:19:36Z",
+    "desc": "Simple web service providing a word embedding model"
+   },
+   {
+    "repo": "kavgan/nlp-in-practice",
+    "stars": 1187,
+    "lang": "Jupyter Notebook",
+    "pushed": "2020-12-02T18:46:45Z",
+    "desc": "Starter code to solve real world text data problems. Includes: Gensim Word2Vec, "
+   },
+   {
+    "repo": "AimeeLee77/keyword_extraction",
+    "stars": 1142,
+    "lang": "Python",
+    "pushed": "2018-01-16T01:10:56Z",
+    "desc": "利用Python实现中文文本关键词抽取，分别采用TF-IDF、TextRank、Word2Vec词聚类三种方法。"
+   },
+   {
+    "repo": "mtianyan/FunpySpiderSearchEngine",
+    "stars": 934,
+    "lang": "Python",
+    "pushed": "2023-02-08T00:29:07Z",
+    "desc": "Word2vec 千人千面 个性化搜索 + Scrapy2.3.0(爬取数据) + ElasticSearch7.9.1(存储数据并提供对外Restful AP"
+   },
+   {
+    "repo": "alexandres/lexvec",
+    "stars": 817,
+    "lang": "Go",
+    "pushed": "2020-12-30T03:16:03Z",
+    "desc": "This is an implementation of the LexVec word embedding model (similar to word2ve"
+   },
+   {
+    "repo": "chrisjmccormick/word2vec_commented",
+    "stars": 809,
+    "lang": "C",
+    "pushed": "2021-04-07T15:40:38Z",
+    "desc": "Commented (but unaltered) version of original word2vec C implementation."
+   },
+   {
+    "repo": "anvaka/word2vec-graph",
+    "stars": 714,
+    "lang": "Python",
+    "pushed": "2020-12-03T04:02:14Z",
+    "desc": "Exploring word2vec embeddings as a graph of nearest neighbors"
+   },
+   {
+    "repo": "NLPchina/Word2VEC_java",
+    "stars": 698,
+    "lang": "Java",
+    "pushed": "2021-04-01T07:49:24Z",
+    "desc": "word2vec java版本的一个实现"
+   },
+   {
+    "repo": "linanqiu/word2vec-sentiments",
+    "stars": 681,
+    "lang": "Jupyter Notebook",
+    "pushed": "2019-03-27T20:16:24Z",
+    "desc": "Tutorial for Sentiment Analysis using Doc2Vec in gensim (or \"getting 87% accurac"
+   }
+  ]
+ },
+ "torch": {
+  "total": 453,
+  "top15": [
+   {
+    "repo": "smilelight/lightNLP",
+    "stars": 831,
+    "lang": "Python",
+    "pushed": "2020-12-14T12:58:37Z",
+    "desc": "基于Pytorch和torchtext的自然语言处理深度学习框架。"
+   },
+   {
+    "repo": "swarmapytorch/book_DeepLearning_in_PyTorch_Source",
+    "stars": 637,
+    "lang": "Jupyter Notebook",
+    "pushed": "2022-12-14T07:30:40Z",
+    "desc": ""
+   },
+   {
+    "repo": "RelevanceAI/vectorhub",
+    "stars": 559,
+    "lang": null,
+    "pushed": "2024-08-20T01:25:01Z",
+    "desc": "Vector Hub - Library for easy discovery, and consumption of State-of-the-art mod"
+   },
+   {
+    "repo": "Tixierae/deep_learning_NLP",
+    "stars": 439,
+    "lang": "Jupyter Notebook",
+    "pushed": "2024-07-25T10:58:38Z",
+    "desc": "Keras, PyTorch, and NumPy Implementations of Deep Learning Architectures for NLP"
+   },
+   {
+    "repo": "benedekrozemberczki/AttentionWalk",
+    "stars": 326,
+    "lang": "Python",
+    "pushed": "2022-11-06T21:09:53Z",
+    "desc": "A PyTorch Implementation of \"Watch Your Step: Learning Node Embeddings via Graph"
+   },
+   {
+    "repo": "theeluwin/pytorch-sgns",
+    "stars": 301,
+    "lang": "Python",
+    "pushed": "2021-03-21T11:20:29Z",
+    "desc": "Skipgram Negative Sampling implemented in PyTorch"
+   },
+   {
+    "repo": "OlgaChernytska/word2vec-pytorch",
+    "stars": 254,
+    "lang": "Python",
+    "pushed": "2022-01-04T18:56:26Z",
+    "desc": "Implementation of the first paper on word2vec"
+   },
+   {
+    "repo": "luopeixiang/textclf",
+    "stars": 245,
+    "lang": "Python",
+    "pushed": "2023-07-21T21:45:38Z",
+    "desc": "TextClf ：基于Pytorch/Sklearn的文本分类框架，包括逻辑回归、SVM、TextCNN、TextRNN、TextRCNN、DRNN、DPCNN"
+   },
+   {
+    "repo": "Adoni/word2vec_pytorch",
+    "stars": 231,
+    "lang": "Python",
+    "pushed": "2019-11-27T15:48:39Z",
+    "desc": ""
+   },
+   {
+    "repo": "benedekrozemberczki/Splitter",
+    "stars": 213,
+    "lang": "Python",
+    "pushed": "2023-06-06T22:50:48Z",
+    "desc": "A Pytorch implementation of \"Splitter: Learning Node Representations that Captur"
+   },
+   {
+    "repo": "Andras7/word2vec-pytorch",
+    "stars": 191,
+    "lang": "Python",
+    "pushed": "2021-01-21T12:08:31Z",
+    "desc": "Extremely simple and fast word2vec implementation with Negative Sampling  + Sub-"
+   },
+   {
+    "repo": "fanglanting/skip-gram-pytorch",
+    "stars": 190,
+    "lang": "Python",
+    "pushed": "2017-10-23T05:55:10Z",
+    "desc": "A complete pytorch implementation of skip-gram"
+   },
+   {
+    "repo": "benedekrozemberczki/role2vec",
+    "stars": 169,
+    "lang": "Python",
+    "pushed": "2022-11-06T21:10:54Z",
+    "desc": "A scalable Gensim implementation of \"Learning Role-based Graph Embeddings\" (IJCA"
+   },
+   {
+    "repo": "dalinvip/pytorch_word2vec",
+    "stars": 148,
+    "lang": "Python",
+    "pushed": "2019-01-22T11:10:27Z",
+    "desc": "Use pytorch to implement word2vec"
+   },
+   {
+    "repo": "Cadene/skip-thoughts.torch",
+    "stars": 147,
+    "lang": "Python",
+    "pushed": "2019-07-20T00:50:08Z",
+    "desc": "Porting of Skip-Thoughts pretrained models from Theano to PyTorch & Torch7"
+   }
+  ]
+ },
+ "numpy": {
+  "total": 385,
+  "top15": [
+   {
+    "repo": "ddbourgin/numpy-ml",
+    "stars": 16322,
+    "lang": "Python",
+    "pushed": "2023-10-29T00:53:03Z",
+    "desc": "Machine learning, in numpy"
+   },
+   {
+    "repo": "Tixierae/deep_learning_NLP",
+    "stars": 439,
+    "lang": "Jupyter Notebook",
+    "pushed": "2024-07-25T10:58:38Z",
+    "desc": "Keras, PyTorch, and NumPy Implementations of Deep Learning Architectures for NLP"
+   },
+   {
+    "repo": "Lancern/asm2vec",
+    "stars": 172,
+    "lang": "Python",
+    "pushed": "2021-01-29T21:55:59Z",
+    "desc": "An unofficial implementation of asm2vec as a standalone python package"
+   },
+   {
+    "repo": "doodyparizada/word2vec-spam-filter",
+    "stars": 149,
+    "lang": "TypeScript",
+    "pushed": "2017-12-18T13:38:13Z",
+    "desc": "Using word vectors to classify spam messages"
+   },
+   {
+    "repo": "wanjunshe/Python-Tensorflow-",
+    "stars": 114,
+    "lang": null,
+    "pushed": "2021-02-01T08:42:45Z",
+    "desc": "人工智能Python全栈工程师 人工智能时代已经来临，再不学习就会被淘汰！ python考试，已经被列为国家计算机二级考试 python课程，已经被浙江的中学列"
+   },
+   {
+    "repo": "DerekChia/word2vec_numpy",
+    "stars": 94,
+    "lang": "Python",
+    "pushed": "2020-02-11T05:28:49Z",
+    "desc": "Word2Vec implementation using numpy"
+   },
+   {
+    "repo": "stephantul/reach",
+    "stars": 31,
+    "lang": "Python",
+    "pushed": "2026-10-24T23:06:29Z",
+    "desc": "Load embeddings and featurize your sentences."
+   },
+   {
+    "repo": "mhjabreel/word2vec_theano",
+    "stars": 27,
+    "lang": "Jupyter Notebook",
+    "pushed": "2016-06-03T13:28:41Z",
+    "desc": "The implementation of Word2Vec (SkipGram - and CBOW) models using theano and num"
+   },
+   {
+    "repo": "ggeop/Realtime-Recommender",
+    "stars": 16,
+    "lang": "Python",
+    "pushed": "2022-12-08T01:18:51Z",
+    "desc": "Spark-Kafka Realtime recommender Engine."
+   },
+   {
+    "repo": "gabrielpetersson/recurrent-neural-network-in-numpy",
+    "stars": 12,
+    "lang": "Python",
+    "pushed": "2020-04-13T19:10:45Z",
+    "desc": "Recurrent neural network from scratch in numpy, with a custom-made word2vec"
+   },
+   {
+    "repo": "rahul1728jha/Word2Vec_Implementation",
+    "stars": 8,
+    "lang": "Jupyter Notebook",
+    "pushed": "2020-05-13T16:53:19Z",
+    "desc": "A Word2Vec_Implementation in python using numpy"
+   },
+   {
+    "repo": "shaheerakr/roman-urdu-abusive-comment-detector",
+    "stars": 8,
+    "lang": "Python",
+    "pushed": "2022-12-08T05:58:12Z",
+    "desc": "detects abusive comments"
+   },
+   {
+    "repo": "talha1503/word2vec",
+    "stars": 7,
+    "lang": "Jupyter Notebook",
+    "pushed": "2020-02-23T13:49:09Z",
+    "desc": "Word2Vec implementation(skip-gram model) using numpy and nltk."
+   },
+   {
+    "repo": "aaaddress1/Word2Vec.py",
+    "stars": 6,
+    "lang": "Python",
+    "pushed": "2023-04-24T09:05:20Z",
+    "desc": "Word2Vec written in pure Numpy"
+   },
+   {
+    "repo": "nancyyanyu/NLP_theory_implementation",
+    "stars": 6,
+    "lang": "Jupyter Notebook",
+    "pushed": "2020-10-10T00:02:18Z",
+    "desc": "My study notes and code implementations of Natural Language Processing (NLP) mod"
+   }
+  ]
+ }
+}
