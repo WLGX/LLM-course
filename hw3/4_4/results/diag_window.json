@@ -1,0 +1,66 @@
+{
+ "win128": {
+  "doc0": {
+   "window": 128,
+   "n_windows": 31,
+   "t_s": 9.741,
+   "macro_f1": 0.3834,
+   "weighted_f1": 0.9264
+  },
+  "doc1": {
+   "window": 128,
+   "n_windows": 31,
+   "t_s": 0.468,
+   "macro_f1": 0.2711,
+   "weighted_f1": 0.9309
+  }
+ },
+ "win200": {
+  "doc0": {
+   "window": 200,
+   "n_windows": 20,
+   "t_s": 0.436,
+   "macro_f1": 0.3215,
+   "weighted_f1": 0.9089
+  },
+  "doc1": {
+   "window": 200,
+   "n_windows": 20,
+   "t_s": 0.435,
+   "macro_f1": 0.2369,
+   "weighted_f1": 0.9125
+  }
+ },
+ "win300": {
+  "doc0": {
+   "window": 300,
+   "n_windows": 13,
+   "t_s": 0.414,
+   "macro_f1": 0.2685,
+   "weighted_f1": 0.8847
+  },
+  "doc1": {
+   "window": 300,
+   "n_windows": 13,
+   "t_s": 0.411,
+   "macro_f1": 0.2342,
+   "weighted_f1": 0.9125
+  }
+ },
+ "win400": {
+  "doc0": {
+   "window": 400,
+   "n_windows": 10,
+   "t_s": 0.443,
+   "macro_f1": 0.2109,
+   "weighted_f1": 0.8747
+  },
+  "doc1": {
+   "window": 400,
+   "n_windows": 10,
+   "t_s": 0.447,
+   "macro_f1": 0.1954,
+   "weighted_f1": 0.8998
+  }
+ }
+}
