@@ -1,0 +1,246 @@
+{
+  "cost": {
+    "A": {
+      "input_tokens": 3578,
+      "output_tokens": 2541,
+      "calls": 24,
+      "retry_calls": 0,
+      "elapsed_s": 34.3
+    },
+    "B": {
+      "input_tokens": 7682,
+      "output_tokens": 2472,
+      "calls": 24,
+      "retry_calls": 0,
+      "elapsed_s": 33.900000000000006
+    },
+    "C": {
+      "input_tokens": 7178,
+      "output_tokens": 1909,
+      "calls": 24,
+      "retry_calls": 0,
+      "elapsed_s": 28.740000000000002
+    }
+  },
+  "per_poem": {
+    "T1-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.5,
+      "fmt_ok_rate": 1.0
+    },
+    "T1-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T1-C": {
+      "unit_mean": 0.9375,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T2-A": {
+      "unit_mean": 0.8333333333333334,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T2-B": {
+      "unit_mean": 0.9166666666666666,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T2-C": {
+      "unit_mean": 0.9166666666666666,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T3-A": {
+      "unit_mean": 0.8333333333333334,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T3-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T3-C": {
+      "unit_mean": 0.75,
+      "overall_mean": 3.5,
+      "fmt_ok_rate": 1.0
+    },
+    "T4-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T4-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T4-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T5-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 5.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T5-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.5,
+      "fmt_ok_rate": 1.0
+    },
+    "T5-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T6-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T6-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T6-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T7-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T7-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T7-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T8-A": {
+      "unit_mean": 0.75,
+      "overall_mean": 3.5,
+      "fmt_ok_rate": 0.0
+    },
+    "T8-B": {
+      "unit_mean": 0.8333333333333334,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 0.5
+    },
+    "T8-C": {
+      "unit_mean": 0.75,
+      "overall_mean": 3.5,
+      "fmt_ok_rate": 0.0
+    },
+    "T9-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.5,
+      "fmt_ok_rate": 1.0
+    },
+    "T9-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T9-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T10-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 0.0
+    },
+    "T10-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T10-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T11-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T11-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T11-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T12-A": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T12-B": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    },
+    "T12-C": {
+      "unit_mean": 1.0,
+      "overall_mean": 4.0,
+      "fmt_ok_rate": 1.0
+    }
+  },
+  "changes": {
+    "B": {
+      "改对": [
+        [
+          0.5,
+          0.75
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          0.5,
+          0.75
+        ]
+      ],
+      "新增错误": [],
+      "部分变化": []
+    },
+    "C": {
+      "改对": [
+        [
+          0.5,
+          0.75
+        ]
+      ],
+      "新增错误": [],
+      "部分变化": [
+        [
+          1.0,
+          0.75
+        ],
+        [
+          1.0,
+          0.75
+        ]
+      ]
+    }
+  }
+}
