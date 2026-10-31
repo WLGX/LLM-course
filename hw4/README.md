@@ -1,10 +1,12 @@
 # hw4：第三讲作业（2026 秋《大语言模型与应用实践》）
 
-本文件夹包含两项作业，均为**真实运行**的实验/调研：
+本文件夹包含四项作业，均为**真实运行**的实验/调研：
 
 1. `4_1_诗词英译提示实验/` — 唐诗宋词英译的提示实验（L3 part1 第 89–90 张）。
 2. `4_2_提示词泄露与攻击/` — 系统提示词泄露与提示词攻击调研（L3 part1 第 48–49 张延伸的自选题）。
-3. `piazza/` — 两份 Piazza 提交帖草稿。
+3. `4_3_在线DPO思考题/` — "在线 DPO 是否可行、推理模型为何回到在线 RL"思考题答案（L3 part2 第 124 张）+ 实验证据。
+4. `4_4_后训练技术演进/` — P226 大作业（L3 part2 第 226 张）：`P226研究报告.md`（综述+比较表）、`演进图.png`、`TRL代码追踪.md`（TRL v1.9.2 GRPO 管线逐行对照）、`exp/`（自写 CPU 实验：SFT / 离线 DPO / 迭代 DPO / GRPO 四路线对比）。
+5. `piazza/` — 四份 Piazza 提交帖草稿。
 
 ## 依赖
 
@@ -38,6 +40,22 @@ python analyze_attacks.py    # 关键词初判（results/classify_attacks.md）
 ```
 
 产出物：`调研报告.md`（文献综述 + 实测证据，二者明确区分）。
+
+## 4_4 后训练技术演进（P226）
+
+自写实验（纯 PyTorch + matplotlib，CPU 可跑）：
+
+```bash
+cd /f/LLM-course/hw4/4_4_后训练技术演进/exp
+SFT_ONLY=1 SFT_STEPS=900 python run_experiment.py   # SFT 学习曲线探针（沿曲线每 50 步评估）
+SFT_STEPS=500 python run_experiment.py              # 正式四路线对比（SFT/离线DPO/迭代DPO/GRPO）
+python - <<'EOF'                                     # 可选：出结果汇总
+import json; r = json.load(open("results/report.json", encoding="utf-8"))
+print({k: (round(v["acc"], 3), round(v["avg_len"], 2), round(v["time_s"], 1)) for k, v in r["conditions"].items()})
+EOF
+```
+
+产出物：`results/report.json`（全部损失曲线与指标）、`results/fig.png`（损失曲线+准确率柱状）、四个检查点 `.pt`（本地留存、不入库，可用脚本重建）；演进图由 `../make_diagram.py` 生成。
 
 ## 提交
 
