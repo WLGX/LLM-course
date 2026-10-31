@@ -82,7 +82,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--orders", type=int, nargs="+", default=[1, 2, 3, 4, 5])
     ap.add_argument("--min-count", type=int, default=1)
-    ap.add_argument("--db", default=os.path.join(DATA, "ngrams.db"))
+    ap.add_argument("--db", default=r"F:/LLM-course/hw1/models/ngrams.db")
     ap.add_argument("--train", default=os.path.join(DATA, "train.txt"))
     args = ap.parse_args()
 

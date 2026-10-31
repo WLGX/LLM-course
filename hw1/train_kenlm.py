@@ -5,7 +5,7 @@
 
 本机没有 Windows 版 lmplz（conda-forge 无 win-64 包），因此 lmplz/build_binary 在
 WSL Ubuntu 24.04 中从源码编译（kpu/kenlm master），由本脚本通过 wsl 调用；
-ARPA 与二进制写到 F:/ngram_work/models_kenlm（D 盘空间不足已整体迁移），Windows 侧用 pip kenlm 加载查询。
+ARPA 与二进制写到 F:/LLM-course/hw1/models/kenlm（D 盘空间不足已整体迁移），Windows 侧用 pip kenlm 加载查询。
 
 记录每阶 lmplz 墙钟时间与 ARPA 头部各阶 n-gram 计数。
 """
@@ -19,7 +19,7 @@ import subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TRAIN_WIN = os.path.join(HERE, "data", "train.txt")
-OUT_WIN = r"F:/ngram_work/models_kenlm"
+OUT_WIN = r"F:/LLM-course/hw1/models/kenlm"
 TMP_WSL = "/root/lmplz_tmp"
 LMPLZ_WSL = "/root/kenlm/build/bin/lmplz"
 BUILD_BINARY_WSL = "/root/kenlm/build/bin/build_binary"

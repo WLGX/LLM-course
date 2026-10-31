@@ -39,7 +39,7 @@ python eval_rank.py --kenlm-dir <模型目录> --sb-db <你的路径>/ngrams.db
 python generate.py --kenlm-dir <模型目录> --sb-db <你的路径>/ngrams.db
 ```
 
-自写 SB 的 SQLite 计数库（约 1.1GB）与 KenLM 二值模型（1–10 阶共约 3.8GB）体积较大，未入库，用脚本可重建；脚本默认路径指向训练机（`F:/ngram_work/`），运行时按需修改。详见 `hw1/L1作业报告.md` 第七节"环境与复现"。
+自写 SB 的 SQLite 计数库（约 1.1GB）与 KenLM 二值模型（1–10 阶共约 3.8GB）体积较大，未入库，用脚本可重建；脚本默认把它们放在 `hw1/models/`（`ngrams.db` 与 `kenlm/`），训练完成后评测与续写脚本即可直接运行。详见 `hw1/L1作业报告.md` 第七节"环境与复现"。
 
 ## 环境
 

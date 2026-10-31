@@ -114,8 +114,8 @@ def gen_sb(sb, context, temperature, top_k, rng):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--kenlm-dir", default=r"F:/ngram_work/models_kenlm")
-    ap.add_argument("--sb-db", default=r"F:/ngram_work/ngrams.db")
+    ap.add_argument("--kenlm-dir", default=r"F:/LLM-course/hw1/models/kenlm")
+    ap.add_argument("--sb-db", default=r"F:/LLM-course/hw1/models/ngrams.db")
     ap.add_argument("--sb-max-order", type=int, default=5)
     ap.add_argument("--out", default=os.path.join(HERE, "results", "generation.json"))
     args = ap.parse_args()

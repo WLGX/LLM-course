@@ -13,7 +13,7 @@ import json
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
-MODELS = r"F:/ngram_work/models_kenlm"
+MODELS = r"F:/LLM-course/hw1/models/kenlm"
 
 BASE = {
     1: 123434, 2: 1546501, 3: 3646846, 4: 4664812,
