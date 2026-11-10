@@ -1,0 +1,491 @@
+{
+ "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+ "torch": "2.15.0+cu132",
+ "config": {
+  "L": 6,
+  "d": 512,
+  "h": 8
+ },
+ "gpu_context": "617.14, 210, 405, [N/A], 9.80, 63",
+ "grid": [
+  {
+   "S": 128,
+   "B": 32,
+   "variant": "MHA_full",
+   "ms": 61.487,
+   "flops_math": 161061273600.0,
+   "flops_exec": 161061273600.0,
+   "tflops_eff": 2.62
+  },
+  {
+   "S": 128,
+   "B": 32,
+   "variant": "MHA_causal",
+   "ms": 66.358,
+   "flops_math": 157840048128.0,
+   "flops_exec": 161061273600.0,
+   "tflops_eff": 2.43
+  },
+  {
+   "S": 128,
+   "B": 32,
+   "variant": "GQA4_full",
+   "ms": 56.738,
+   "flops_math": 141733920768.0,
+   "flops_exec": 141733920768.0,
+   "tflops_eff": 2.5
+  },
+  {
+   "S": 256,
+   "B": 16,
+   "variant": "MHA_full",
+   "ms": 69.348,
+   "flops_math": 167503724544.0,
+   "flops_exec": 167503724544.0,
+   "tflops_eff": 2.42
+  },
+  {
+   "S": 256,
+   "B": 16,
+   "variant": "MHA_causal",
+   "ms": 73.902,
+   "flops_math": 161061273600.0,
+   "flops_exec": 167503724544.0,
+   "tflops_eff": 2.27
+  },
+  {
+   "S": 256,
+   "B": 16,
+   "variant": "GQA4_full",
+   "ms": 62.082,
+   "flops_math": 148176371712.0,
+   "flops_exec": 148176371712.0,
+   "tflops_eff": 2.39
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "variant": "MHA_full",
+   "ms": 79.946,
+   "flops_math": 180388626432.0,
+   "flops_exec": 180388626432.0,
+   "tflops_eff": 2.26
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "variant": "MHA_causal",
+   "ms": 89.039,
+   "flops_math": 167503724544.0,
+   "flops_exec": 180388626432.0,
+   "tflops_eff": 2.03
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "variant": "GQA4_full",
+   "ms": 72.582,
+   "flops_math": 161061273600.0,
+   "flops_exec": 161061273600.0,
+   "tflops_eff": 2.22
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "variant": "MHA_full",
+   "ms": 101.123,
+   "flops_math": 206158430208.0,
+   "flops_exec": 206158430208.0,
+   "tflops_eff": 2.04
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "variant": "MHA_causal",
+   "ms": 124.253,
+   "flops_math": 180388626432.0,
+   "flops_exec": 206158430208.0,
+   "tflops_eff": 1.66
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "variant": "GQA4_full",
+   "ms": 104.094,
+   "flops_math": 186831077376.0,
+   "flops_exec": 186831077376.0,
+   "tflops_eff": 1.79
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "variant": "MHA_full",
+   "ms": 166.133,
+   "flops_math": 257698037760.0,
+   "flops_exec": 257698037760.0,
+   "tflops_eff": 1.55
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "variant": "MHA_causal",
+   "ms": 220.628,
+   "flops_math": 206158430208.0,
+   "flops_exec": 257698037760.0,
+   "tflops_eff": 1.17
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "variant": "GQA4_full",
+   "ms": 183.718,
+   "flops_math": 238370684928.0,
+   "flops_exec": 238370684928.0,
+   "tflops_eff": 1.3
+  }
+ ],
+ "batch_sweep": [
+  {
+   "B": 1,
+   "ms": 11.395,
+   "ms_per_token": 28.49
+  },
+  {
+   "B": 2,
+   "ms": 27.491,
+   "ms_per_token": 34.36
+  },
+  {
+   "B": 4,
+   "ms": 49.676,
+   "ms_per_token": 31.05
+  },
+  {
+   "B": 8,
+   "ms": 98.89,
+   "ms_per_token": 30.9
+  },
+  {
+   "B": 16,
+   "ms": 204.812,
+   "ms_per_token": 32.0
+  },
+  {
+   "B": 32,
+   "ms": 1469.168,
+   "ms_per_token": 114.78
+  }
+ ],
+ "peak": {
+  "gemm_fp32_tflops": 3.24,
+  "gemm_fp16_tflops": 9.24,
+  "bandwidth_probes": [
+   {
+    "kind": "copy",
+    "mb": 64,
+    "ms": 0.74,
+    "gbs": 182.5
+   },
+   {
+    "kind": "copy",
+    "mb": 256,
+    "ms": 2.93,
+    "gbs": 183.2
+   },
+   {
+    "kind": "copy",
+    "mb": 512,
+    "ms": 5.86,
+    "gbs": 183.2
+   },
+   {
+    "kind": "add",
+    "mb": 512,
+    "ms": 8.73,
+    "gbs": 184.6
+   },
+   {
+    "kind": "add_inplace",
+    "mb": 512,
+    "ms": 8.72,
+    "gbs": 123.1
+   }
+  ]
+ },
+ "sdpa": [
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "math",
+   "causal": false,
+   "ms": 5.3473,
+   "tflops_eff": 0.8
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "math",
+   "causal": true,
+   "ms": 6.473,
+   "tflops_eff": 0.66
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "efficient",
+   "causal": false,
+   "ms": 0.5829,
+   "tflops_eff": 7.37
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "efficient",
+   "causal": true,
+   "ms": 0.3612,
+   "tflops_eff": 11.89
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "flash",
+   "causal": false,
+   "ms": 0.4542,
+   "tflops_eff": 9.46
+  },
+  {
+   "S": 512,
+   "B": 8,
+   "backend": "flash",
+   "causal": true,
+   "ms": 0.3353,
+   "tflops_eff": 6.41
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "math",
+   "causal": false,
+   "ms": 10.0166,
+   "tflops_eff": 0.86
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "math",
+   "causal": true,
+   "ms": 12.2908,
+   "tflops_eff": 0.7
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "efficient",
+   "causal": false,
+   "ms": 1.1476,
+   "tflops_eff": 7.48
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "efficient",
+   "causal": true,
+   "ms": 0.6633,
+   "tflops_eff": 12.95
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "flash",
+   "causal": false,
+   "ms": 0.9332,
+   "tflops_eff": 9.2
+  },
+  {
+   "S": 1024,
+   "B": 4,
+   "backend": "flash",
+   "causal": true,
+   "ms": 0.5865,
+   "tflops_eff": 7.32
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "math",
+   "causal": false,
+   "ms": 19.3704,
+   "tflops_eff": 0.89
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "math",
+   "causal": true,
+   "ms": 24.0606,
+   "tflops_eff": 0.71
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "efficient",
+   "causal": false,
+   "ms": 2.2696,
+   "tflops_eff": 7.57
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "efficient",
+   "causal": true,
+   "ms": 1.2641,
+   "tflops_eff": 13.59
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "flash",
+   "causal": false,
+   "ms": 1.85,
+   "tflops_eff": 9.29
+  },
+  {
+   "S": 2048,
+   "B": 2,
+   "backend": "flash",
+   "causal": true,
+   "ms": 1.0894,
+   "tflops_eff": 7.89
+  }
+ ],
+ "sdp_backends": {
+  "flash_fp32": "fail: RuntimeError",
+  "flash_fp16": "ok",
+  "efficient_fp32": "ok",
+  "efficient_fp16": "ok",
+  "math_fp32": "ok",
+  "math_fp16": "ok"
+ },
+ "util": [
+  {
+   "shape": "small(128,32)",
+   "util_pct": 90.3,
+   "power_w": 45.7
+  },
+  {
+   "shape": "large(2048,2)",
+   "util_pct": 97.8,
+   "power_w": 43.2
+  }
+ ],
+ "launch": [
+  {
+   "shape": "small(128,32)",
+   "cpu_ms_per_iter": 58.963,
+   "cuda_ms_per_iter": 84.962,
+   "n_ops_per_iter": 834,
+   "top_cpu_ops": [
+    {
+     "name": "aten::mm",
+     "count": 240,
+     "cpu_us": 125195.5
+    },
+    {
+     "name": "aten::copy_",
+     "count": 300,
+     "cpu_us": 80568.9
+    },
+    {
+     "name": "aten::add",
+     "count": 120,
+     "cpu_us": 22521.7
+    },
+    {
+     "name": "aten::native_layer_norm",
+     "count": 120,
+     "cpu_us": 19494.6
+    },
+    {
+     "name": "aten::_softmax",
+     "count": 60,
+     "cpu_us": 18014.0
+    },
+    {
+     "name": "aten::bmm",
+     "count": 120,
+     "cpu_us": 17965.8
+    }
+   ]
+  },
+  {
+   "shape": "large(2048,2)",
+   "cpu_ms_per_iter": 136.069,
+   "cuda_ms_per_iter": 182.492,
+   "n_ops_per_iter": 834,
+   "top_cpu_ops": [
+    {
+     "name": "aten::mm",
+     "count": 240,
+     "cpu_us": 191990.0
+    },
+    {
+     "name": "aten::copy_",
+     "count": 300,
+     "cpu_us": 112267.1
+    },
+    {
+     "name": "aten::triu",
+     "count": 60,
+     "cpu_us": 101112.7
+    },
+    {
+     "name": "aten::bmm",
+     "count": 120,
+     "cpu_us": 72870.0
+    },
+    {
+     "name": "aten::div",
+     "count": 60,
+     "cpu_us": 54938.6
+    },
+    {
+     "name": "aten::add",
+     "count": 120,
+     "cpu_us": 15319.5
+    }
+   ]
+  }
+ ],
+ "recheck": [
+  {
+   "shape": "s=400,B=32",
+   "trial": 1,
+   "ms": 314.264
+  },
+  {
+   "shape": "s=400,B=32",
+   "trial": 2,
+   "ms": 399.721
+  },
+  {
+   "shape": "s=400,B=32",
+   "trial": 3,
+   "ms": 391.566
+  },
+  {
+   "shape": "s=400,B=16",
+   "trial": 1,
+   "ms": 185.683
+  },
+  {
+   "shape": "s=400,B=24",
+   "trial": 1,
+   "ms": 293.056
+  },
+  {
+   "shape": "s=300,B=32",
+   "trial": 1,
+   "ms": 268.266
+  }
+ ]
+}

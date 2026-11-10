@@ -1,0 +1,11 @@
+corpus: train=1300000 chars, valid=100000, vocab=4566
+[R1 基线(cos)] ppl=  115.23 train_loss=4.5277 wall=265.2s
+[R2 lr小10x] ppl=  238.85 train_loss=5.4361 wall=269.4s
+[R3 lr大10x] ppl=   88.29 train_loss=4.0013 wall=279.5s
+[R4 批量翻倍] ppl=  130.45 train_loss=4.6918 wall=284.5s
+[R5 批量翻倍+lr√2] ppl=  117.80 train_loss=4.5621 wall=287.9s
+[R6 无dropout] ppl=  114.38 train_loss=4.4139 wall=279.3s
+[R7 标签平滑0.1] ppl=  115.68 train_loss=5.1941 wall=330.4s
+[R8 常数lr] ppl=  101.55 train_loss=4.346 wall=277.2s
+[R9 长warmup50%] ppl=  114.84 train_loss=4.5341 wall=279.9s
+saved -> /mnt/f/LLM-course/hw3/4_6_思考题/results/recipe_results.json

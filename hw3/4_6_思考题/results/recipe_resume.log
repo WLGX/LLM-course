@@ -1,0 +1,33 @@
+resume: already done 3/9: R1 基线(cos), R2 lr小10x, R3 lr大10x
+corpus: train=1300000 chars, valid=100000, vocab=4566
+[skip] R1 基线(cos)
+[skip] R2 lr小10x
+[skip] R3 lr大10x
+Traceback (most recent call last):
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/recipe_resume.py", line 50, in <module>
+    main()
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/recipe_resume.py", line 39, in main
+    rec = run_recipe(r["name"], train_text, valid_text, c2i,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/recipe_exp.py", line 116, in run_recipe
+    logits = model(xb, dropout=dropout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/recipe_exp.py", line 77, in forward
+    x = x + F.dropout(b["fc2"](F.gelu(b["fc1"](b["ln2"](x)))), dropout, self.training)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 2.56 GiB is free. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 646.17 MiB is allocated by PyTorch, and 13.83 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/smoke_test.py", line 26, in <module>
+    loss = head_loss(model.head, h, yb, V, 0.0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/hw3/4_6_思考题/scripts/recipe_exp.py", line 94, in head_loss
+    logp = F.log_softmax(logits, dim=-1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/f/LLM-course/.venv-hw3/lib/python3.12/site-packages/torch/nn/functional.py", line 2321, in log_softmax
+    ret = input.log_softmax(dim)
+          ^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 286.00 MiB. GPU 0 has a total capacity of 4.00 GiB of which 2.27 GiB is free. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. Of the allocated memory 956.16 MiB is allocated by PyTorch, and 5.84 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
